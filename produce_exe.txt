@@ -1,0 +1,13 @@
+先執行
+pyinstaller -F sharkcoin.py -c --icon=pic\icon.ico
+
+修改.spec檔
+a.zipfiles,
+a.datas,
+[('\\pic\\coin.png','D:\\USER\\Documents\\sharkcoin\\pic\\coin.png','DATA'),
+		   ('\\pic\\performance.png','D:\\USER\\Documents\\sharkcoin\\pic\\performance.png','DATA'),
+		   ('\\pic\\exit.png','D:\\USER\\Documents\\sharkcoin\\pic\\exit.png','DATA')],
+新增Icon並產生exe
+pyinstaller -F sharkcoin.spec
+
+pyinstaller -F -i pic\transaction.ico trans_record.pyw
