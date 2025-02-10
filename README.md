@@ -20,6 +20,8 @@ This makes it a **complex yet rewarding challenge** to explore blockchain princi
 
 ## 🏗️ Overview  
 The overall system architecture is illustrated in **Figure 1**.  
+![system architecture](image/Fig1.png)
+
 
 ### 🔑 1. User Authentication & Registration  
 - Users interact with the system through a **GUI interface** (Figure 2).  
