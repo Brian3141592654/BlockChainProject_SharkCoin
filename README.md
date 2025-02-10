@@ -20,13 +20,15 @@ This makes it a **complex yet rewarding challenge** to explore blockchain princi
 
 ## 🏗️ Overview  
 The overall system architecture is illustrated in **Figure 1**.  
-![system architecture](image/Fig1.png)
+![system architecture](image/Fig1.jpeg)
 
 
 ### 🔑 1. User Authentication & Registration  
 - Users interact with the system through a **GUI interface** (Figure 2).  
 - New users complete a **registration process**, where an **RSA key pair (Public & Private Key)** is generated and stored locally.  
-- These keys are used for **authentication** and **digital signing** in future transactions.  
+- These keys are used for **authentication** and **digital signing** in future transactions.
+
+![login interface](image/Fig2.jpeg)
 
 ### 🔄 2. Client-Server Interaction  
 - Upon successful login, the **Client and Server** communicate, with the **Server managing a MySQL database**.  
@@ -39,7 +41,9 @@ The overall system architecture is illustrated in **Figure 1**.
 
 ### ⛏️ 3. Mining Process  
 - Each Client computes a **hash using SHA-256** by iterating through a **random nonce** (Figure 3).  
-- Mining continues **until a valid hash is found** that meets the required difficulty level.  
+- Mining continues **until a valid hash is found** that meets the required difficulty level.
+
+![Mining Process and Successful Mining](image/Fig3.jpeg)
 
 ### 🎯 4. Mining Rewards & Blockchain Updates  
 - Once a Client **successfully mines a block**, it submits the following to the Server:  
@@ -47,7 +51,9 @@ The overall system architecture is illustrated in **Figure 1**.
   - ✅ **Public Key**  
   - ✅ **Transaction Details**  
 - Other Clients **pause their mining operations** temporarily.  
-- After validation, the successful miner receives a **Shark Coin reward** 🦈💰 (Figure 4).  
+- After validation, the successful miner receives a **Shark Coin reward** 🦈💰 (Figure 4).
+
+![The reward list](image/Fig4.jpeg)
 
 ### 📜 5. Transaction Processing & Block Generation  
 - The mining reward is treated as a **transaction**, which is:  
